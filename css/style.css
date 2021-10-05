@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+   }
+
+body
+{
+    font-family: Raleway, sans-serif;
+    margin: 0 40px 0 40px;
+}
+   /* Header */
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+header img
+{
+    height: 90px;
+    width: 191;
+    padding: 40px 15px 15px 15px;
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a 
+{
+    font-size: 13px;
+    padding: 40px 15px 15px 15px;
+    outline: none;
+    text-decoration: none;
+}
+
+nav a:visited
+{
+    color: #000000;
+}
+
+nav a:hover
+{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
