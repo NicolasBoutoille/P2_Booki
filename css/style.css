@@ -25,7 +25,13 @@ ul
     margin: 0;
 }
 
-/*** Header ***/
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+/*************************************** Header ***************************************/
 
 .top-header
 {
@@ -58,8 +64,6 @@ nav a
     justify-content: center;
     height: 100%;
     font-size: 16px;
-    text-decoration: none;
-    color: black;
     padding: 0px 25px 0px 25px;
     border-top: 2px solid white ;
 }
@@ -72,7 +76,7 @@ nav a:hover
 
 /*** Media queries tablets ***/
 
-@media all and (max-width: 992px)
+@media all and (min-width: 769px) and (max-width: 992px)
 {
     .top-header
     {
@@ -115,16 +119,16 @@ nav a:hover
     }
 }
 
-/*** Main ***/
+/*************************************** Main ***************************************/
 
 main
 {
-    padding: 0 50px 0 40px;
+    padding: 0 53px 0 50px;
 }
 
 /*** Media queries tablets ***/
 
-@media all and (max-width: 992px)
+@media all and (min-width: 769px) and (max-width: 992px)
 {
     
 }
@@ -138,7 +142,7 @@ main
         padding: 0;
     }
 }
-/*** Search bar ***/
+/*************************************** Search bar ***************************************/
 
 .search-title
 {
@@ -214,7 +218,7 @@ h1
 
 /*** Media queries tablets ***/
 
-@media all and (max-width: 992px)
+@media all and (min-width: 769px) and (max-width: 992px)
 {
     .find-lodge
     {
@@ -270,7 +274,7 @@ h1
 
 }
 
-/*** Filters ***/
+/*************************************** Filters ***************************************/
 
 .filters
 {
@@ -284,10 +288,8 @@ h1
 
 .filters a
 {
-    text-decoration: none;
     padding: 0;
     margin: 0;
-    color: black;
 }
 
 .filters p
@@ -365,18 +367,12 @@ h1
     margin-right: 1%;
 }
 
-/*** Lodging ***/
+/*************************************** Lodging ***************************************/
 
 .lodging
 {
     display: flex;
     width: 100%;
-}
-
-.lodging a
-{
-    text-decoration: none;
-    color: black;
 }
 
 .marseille
@@ -413,7 +409,7 @@ h2
     border: 5px solid white;
     border-radius: 20px;
     box-shadow: 0 3px 20px rgb(153,153,153,30%);
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     overflow: hidden;
 }
 .card:hover
@@ -434,7 +430,6 @@ h3
 {
     margin: 2% 0;
     font-size: 16px;
-    white-space: wrap;
 }
 
 .container
@@ -453,7 +448,7 @@ h3
 .stars
 {
     margin-top: auto;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     color: #0065FC;
     font-size: 11px;
 }
@@ -476,6 +471,7 @@ h3
     padding: 2% 3%;
     background-color: #F2F2F2;
     border-radius: 20px;
+    flex-wrap: wrap;
 }
 
 .title-popular h2
@@ -490,21 +486,21 @@ h3
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 5%;
 }
 
 .popular-card
 {
     display: flex;
     height: 140px;
-    width: 350px;
+    width: 100%;
     background-color: white;
     border: 5px solid white;
     border-radius: 20px;
     box-shadow: 0 3px 20px rgb(153,153,153,30%);
     overflow: hidden;
-    margin-top: 10%;
-    padding-right: 5%;
+    margin-bottom: 10%;
 }
 
 .popular-card:hover
@@ -516,16 +512,17 @@ h3
 
 .popular-card img
 {
-    height: 100%;
+    height: auto;
     width: 40%;
     object-fit: cover;
+    flex-shrink: 0;
 }
 
 .popular-info
 {
     display: flex;
     flex-direction: column;
-    margin-left: 4%;
+    margin: 3% 5% 3% 5%;
 }
 
 .popular-info p
@@ -536,6 +533,39 @@ h3
 }
 
 /*** Lodging - Media queries mobile ***/
+
+@media all and (min-width: 769px) and (max-width: 992px)
+{
+    .lodging
+    {
+        flex-wrap: wrap-reverse;
+    }
+
+    .marseille
+    {
+        width: 100%;
+        margin: 5% 0;
+        padding: 2% 5%;
+    }
+
+    .card-container
+    {
+        justify-content: space-between;
+    }
+
+    .card
+    {
+        width: 40%;
+    }
+
+    .most-popular
+    {
+        width: 100%;
+        padding: 2% 5%;
+    }
+
+
+}
 
 @media all and (max-width: 768px)
 {
@@ -551,11 +581,6 @@ h3
         padding: 4%;
     }
 
-    .popular-card
-    {
-        width: 100%;
-    }
-
     .marseille
     {
         width: 100%;
@@ -565,6 +590,207 @@ h3
     }
 
     .card
+    {
+        width: 100%;
+    }
+}
+
+/*************************************** Activities ***************************************/
+
+.activities h2
+{
+    margin: 2% 0;
+}
+.activity-container
+{
+    display: flex;
+    justify-content: space-between;
+    height: 445px;
+    margin: 2% 0;
+}
+
+.activity-name
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    margin: 0;
+    padding: 6% 6%;
+    height: 55px;
+    width: 100%;
+}
+
+.vieux-port
+{
+    position: relative;
+    width: 22.5%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 3px 20px rgb(153,153,153,30%);
+}
+
+.vieux-port img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.vieux-port:hover
+{
+    transform: scale(1.05);
+    transition: 0.3s;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+}
+
+.column-one
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 22.5%;
+}
+
+.pomegues
+{
+    position: relative;
+    height: 53%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 3px 20px rgb(153,153,153,30%);
+}
+
+.pomegues img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pomegues:hover
+{
+    transform: scale(1.05);
+    transition: 0.3s;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+}
+
+.frioul
+{
+    position: relative;
+    height: 37%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 3px 20px rgb(153,153,153,30%);
+}
+
+.frioul img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.frioul:hover
+{
+    transform: scale(1.05);
+    transition: 0.3s;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+}
+
+.calanques
+{
+    position: relative;
+    width: 22.5%;
+    border-radius: 20px;
+    box-shadow: 0 3px 20px rgb(153,153,153,30%);
+    overflow: hidden;
+}
+
+.calanques img
+{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.calanques:hover
+{
+    transform: scale(1.05);
+    transition: 0.3s;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+}
+
+.column-two
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 22.5%;
+}
+
+.notre
+{
+    position: relative;
+    height: 44%;
+    border-radius: 20px;
+    box-shadow: 0 3px 20px rgb(153,153,153,30%);
+    overflow: hidden;
+}
+
+.notre img
+{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.notre:hover
+{
+    transform: scale(1.05);
+    transition: 0.3s;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+}
+
+.longchamp
+{
+    position: relative;
+    height: 47%;
+    border-radius: 20px;
+    box-shadow: 0 3px 20px rgb(153,153,153,30%);
+    overflow: hidden;
+}
+
+.longchamp img
+{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.longchamp:hover
+{
+    transform: scale(1.05);
+    transition: 0.3s;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+}
+
+/*** Activities - Media queries mobile ***/
+
+@media all and (max-width: 769px)
+
+{
+    .activities
+    {
+        padding: 2% 5%;
+    }
+
+    .activity-container
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .vieux-port
     {
         width: 100%;
     }
