@@ -11,7 +11,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
-            <!--Header-->
+            <!-- Header -->
             <header class="top-header">
                     <img src="images/logo/Booki.png" alt="Logo-booki">
                     <nav>
@@ -19,35 +19,33 @@
                         <a href="#activites">Activités</a>
                     </nav>
             </header>
-
-            <!--Main-->
-
+            <!-- Main -->
             <main>
-                <!--Search bar-->
+                <!-- Search bar -->
                 <section class="find-lodge">
                     <div class="search-title">
                         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                         <p>En plein centre ville ou en pleine nature</p>
                     </div>
-                        <form  method="post" action="#" id="search-bar" >
-                                <i class="fas fa-map-marker-alt" id="marker-logo"></i><!--- whitespace
-                                --><input type="text" name="search" id="search" value="Marseille, France"/><!--- whitespace
-                                --><input type="button" name="search-button" id="search-button" value="Rechercher"/><!--whitespace
-                                --><i class="fas fa-search" id="search-logo"></i>
-                        </form>
-                    <!--Filters-->
+                    <form  method="post" action="#" id="search-bar" >
+                            <i class="fas fa-map-marker-alt" id="marker-logo"></i><!--- whitespace
+                            --><input type="text" name="search" id="search" value="Marseille, France"/><!--- whitespace
+                            --><input type="button" name="search-button" id="search-button" value="Rechercher"/><!--whitespace
+                            --><i class="fas fa-search" id="search-logo"></i>
+                    </form>
+                    <!-- Filters -->
                     <div class="filters">
                         <p>Filtres</p>
-                        <ul class="all-filters">
-                            <li class="filter"><i class="fas fa-money-bill-wave"></i><span>Économique</span></li>
-                            <li class="filter"><i class="fas fa-child"></i><span>Familial</span></li>
-                            <li class="filter"><i class="fas fa-heart"></i><span>Romantique</span></li>
-                            <li class="filter"><i class="fas fa-dog"></i><span>Animaux autorisés</span></li>
-                        </ul>
+                        <div class="all-filters">
+                            <a href="#" class="filter"><i class="fas fa-money-bill-wave"></i><span>Économique</span></a>
+                            <a href="#" class="filter"><i class="fas fa-child"></i><span>Familial</span></a>
+                            <a href="#" class="filter"><i class="fas fa-heart"></i><span>Romantique</span></a>
+                            <a href="#" class="filter"><i class="fas fa-dog"></i><span>Animaux autorisés</span></a>
+                        </div>
                     </div>
                     <div class="info-filters"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</div>
                 </section>
-                <!--Lodging-->
+                <!-- Lodging -->
                 <section class="lodging">
                     <section class="marseille">
                         <h2 id="hebergements">Hébergements à Marseille</h2>
@@ -189,9 +187,9 @@
                         </div>
                     </section>
                 </section>
-                <!-- Activities-->
+                <!-- Activities -->
                 <section class="activities">
-                    <h2>Activités à Marseille</h2>
+                    <h2 id="activites">Activités à Marseille</h2>
                     <section class="activity-container">
                         <a href="#" class="vieux-port">
                             <img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port"/>
@@ -224,5 +222,24 @@
                     </section>
                 </section>
             </main>
+            <!-- Footer -->
+            <footer>
+                <div class="about">
+                    <h4>A propos</h4>
+                        <a href="#" class="link">Fonctionnement du site</a>
+                        <a href="#" class="link">Conditions générales de vente</a>
+                        <a href="#" class="link">Données et confidentialité</a>
+                </div>
+                <div class="our-lodging">
+                    <h4>Nos hébergements</h4>
+                        <a href="#" class="link">Charte qualité</a>
+                        <a href="#" class="link">Soumettre votre hôtel</a>
+                </div>
+                <div class="assistance">
+                    <h4>Assistance</h4>
+                        <a href="#" class="link">Centre d'aide</a>
+                        <a href="#" class="link">Nous contacter</a>
+                </div>
+            </footer>
     </body>
 </html>
