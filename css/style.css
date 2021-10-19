@@ -11,7 +11,6 @@ h1
 {
     padding: 0;
     margin: 0;
-    font-weight: bold;
 }
 
 h4
@@ -22,22 +21,19 @@ h4
 
 p
 {
-    font-weight: bold;
     margin: 0;
     padding: 0;
-}
-
-ul
-{
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
 }
 
 a
 {
     text-decoration: none;
     color: black;
+}
+
+strong
+{
+    font-weight: 600;
 }
 
 /*************************************** Header ***************************************/
@@ -63,7 +59,7 @@ nav
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 115px;
+    height: 100px;
 }
 
 nav a 
@@ -74,7 +70,7 @@ nav a
     height: 100%;
     font-size: 16px;
     padding: 0px 25px 0px 25px;
-    border-top: 2px solid white ;
+    border-top: 2px solid white;
 }
 
 nav a:hover
@@ -132,7 +128,7 @@ nav a:hover
 
 main
 {
-    margin: 2% 0 4% 0;
+    margin: 1.5% 0 4% 0;
     padding: 0 53px 0 50px;
 }
 
@@ -147,6 +143,19 @@ main
 }
 
 /*************************************** Search bar ***************************************/
+
+h1
+{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 0.8%;
+}
+
+.search-title p
+{
+    font-size: 16px;
+    font-weight: 300;
+}
 
 #search-bar
 {
@@ -178,7 +187,7 @@ main
     height: 80%;
     border: 1px solid #F2F2F2;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 600;
     padding: 1px 16px 1px 16px;
 }
 
@@ -191,25 +200,12 @@ main
     font-size: 18px;
     background-color: #0065FC;
     color: white;
-    font-weight: bold;
+    font-weight: 600;
     border-style: none;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     padding: 1px 16px 1px 16px;
     cursor: pointer;
-}
-
-h1
-{
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 0.8%;
-}
-
-.search-title p
-{
-    font-size: 16px;
-    font-weight: 300;
 }
 
 #search-logo
@@ -234,7 +230,7 @@ h1
     .find-lodge
     {
         width: 100%;
-        padding: 4%;
+        padding: 5%;
         display: flex;
         flex-direction: column;
     }
@@ -295,6 +291,7 @@ h1
 .filters p
 {
     font-size: 18px;
+    font-weight: 600;
     margin: 0 3% 1.5% 0.5%;
 }
 
@@ -339,7 +336,7 @@ h1
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    font-size: 18px;
+    font-size: 20px;
     background-color: #DEEBFF;
     color: #0065FC;
 }
@@ -347,7 +344,7 @@ h1
 .filter span
 {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 600;
     padding-left: 13px;
     white-space: nowrap;
 }
@@ -398,7 +395,6 @@ h1
 {
     width: 100%;
     margin-top: 3%;
-    margin-bottom: 2%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -407,6 +403,7 @@ h1
 h2
 {
     font-size: 22px;
+    font-weight: 600;
     margin-bottom: 0;
 }
 
@@ -440,6 +437,7 @@ h3
 {
     margin: 2% 0;
     font-size: 16px;
+    font-weight: 600;
 }
 
 .container
@@ -451,7 +449,7 @@ h3
 .container p
 {
     margin: 3% 0;
-    font-weight: normal;
+    font-weight: 300;
     font-size: 14px;
 }
 
@@ -470,7 +468,7 @@ h3
 
 .show-more
 {
-    font-weight: bold;
+    font-weight: 600;
     font-size: 18px;
 }
 
@@ -537,7 +535,7 @@ h3
 .popular-info p
 {
     margin: 4% 0;
-    font-weight: normal;
+    font-weight: 300;
     font-size: 14px;
 }
 
@@ -588,7 +586,7 @@ h3
     {
         width: 100%;
         border-radius: 0;
-        padding: 4%;
+        padding: 5%;
     }
 
     .marseille
@@ -596,7 +594,7 @@ h3
         width: 100%;
         border-radius: 0;
         background-color: white;
-        padding: 4%;
+        padding: 5%;
         margin: 0%;
     }
 
@@ -610,7 +608,7 @@ h3
 
 .activities h2
 {
-    margin: 2% 0;
+    margin: 4% 0 2% 0;
 }
 
 .activity-container
@@ -794,7 +792,7 @@ h3
 {
     .activities
     {
-        padding: 4% 4%;
+        padding: 4% 5%;
     }
 
     .activity-container
@@ -910,6 +908,7 @@ h4
         display: flex;
         flex-direction: column;
         width: 100%;
+        padding: 10% 10%;
     }
 
     .about
