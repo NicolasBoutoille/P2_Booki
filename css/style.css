@@ -5,6 +5,8 @@
 body
 {
     font-family: Raleway, sans-serif;
+    max-width: 1700px;
+    margin: auto;
 }
 
 h1, h4, p
